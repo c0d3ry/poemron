@@ -15,18 +15,21 @@
       </header>
 
       <main>
-        <form id="form-input">
-          <input
-            class="prompt"
-            type="text"
-            placeholder="Enter a topic for your poem..."
-            autofocus
-            required
-            id="user-input"
-          />
-          <input class="button" type="submit" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="form-input">
+            <input
+              class="prompt"
+              type="text"
+              placeholder="Enter a topic for your poem..."
+              autofocus
+              required
+              id="user-input"
+            />
+            <input class="button" type="submit" />
+          </form>
+          <div class="hint">i.e Flower, London, Tea</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>
