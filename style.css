@@ -23,12 +23,8 @@ h1 {
 }
 
 form {
-  padding: 30px;
   background: #f9f7fe;
-  margin-bottom: 30px;
-  border-radius: 10px;
   display: flex;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
 }
 
 .prompt {
@@ -52,6 +48,36 @@ form {
   background: #89cff3;
 }
 
+.form-container {
+  background: #f7f5fd;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 11px;
+  margin: 5px 0 0 15px;
+  opacity: 0.6;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
 .poem {
   font-size: 16px;
   background: #f9f7fe;
@@ -60,6 +86,10 @@ form {
   line-height: 2;
   border-left: 4px solid #50d4e6;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+}
+
+.hidden {
+  display: none;
 }
 
 .poem strong {
